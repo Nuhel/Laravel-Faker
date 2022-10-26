@@ -4,15 +4,15 @@ namespace Faker\Provider\bn_BD;
 
 class Address extends \Faker\Provider\Address
 {
-    protected static $cityPrefix = ['দক্ষিন', 'পূর্ব', 'পশ্চিম', 'উত্তর', 'নতুন', 'লেইক', 'পোর্ট'];
-    protected static $citySuffix = ['টাউন', 'তলা', 'হাট', 'খানা'];
+    protected static $cityPrefix = ['জকিগঞ্জ','আশুগঞ্জ', 'বরিশাল', 'ব্রাহ্মণবাড়িয়া', 'চিটাগাং', 'কক্সবাজার', 'কুমিল্লা', 'ঢাকা', 'মৌলভীবাজার','সিলেট','খুলনা','যশোর','টাঙ্গাইল','বিয়ানী বাজার','আশুলিয়া'];
+    protected static $citySuffix = ['টাউন', 'তলা', 'হাট', 'বাজার'];
 
     protected static $streetNames = [
-        'বরকত', 'হাজী', 'করিমউদ্দিন',
+        'বরকত', 'হাজী', 'করিমউদ্দিন','বিমান বন্দর','স্টেশন','কোয়ার্টার','কুড়িল','রিয়াছত উল্লাহ','শেখ কামাল','এম সাইফুর রহমান','শেখ মুজিব','শেখ রাসেল','শেখ হাসিনা','নজরুল ইসলাম'
     ];
 
     protected static $streetSuffix = [
-        'তলী', 'গলি', 'চিপা', 'ব্রীজ', 'সড়ক', 'বাইপাস', 'ক্যাম্প',
+        'মহা সড়ক', 'গলি','সড়ক', 'বাইপাস রোড', 'রোড','ফ্লাইওভার'
     ];
     protected static $postcode = ['#####', '#####-####'];
     protected static $state = [
@@ -274,7 +274,7 @@ class Address extends \Faker\Provider\Address
         'হাঙ্গেরি',
     ];
     protected static $cityFormats = [
-        '{{cityPrefix}}{{citySuffix}}',
+        '{{cityPrefix}}',
 
     ];
     protected static $streetNameFormats = [
